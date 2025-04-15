@@ -1,0 +1,1 @@
+{"name":"Local: A+B-3","url":"c:\\Users\\Admin\\Desktop\\Coding-Test\\BaekJoon\\Class1\\A+B-3.py","tests":[{"id":1744688510810,"input":"5\n1 1\n2 3\n3 4\n9 8\n5 2","output":"2\n5\n7\n17\n7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\Desktop\\Coding-Test\\BaekJoon\\Class1\\A+B-3.py","group":"local","local":true}
