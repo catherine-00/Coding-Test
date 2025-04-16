@@ -1,0 +1,1 @@
+{"name":"Local: X보다작은수","url":"c:\\Users\\Admin\\Desktop\\Coding-Test\\BaekJoon\\Class1\\X보다작은수.py","tests":[{"id":1744775051300,"input":"10 5\n1 10 4 9 2 3 8 5 7 6","output":"1 4 2 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\Desktop\\Coding-Test\\BaekJoon\\Class1\\X보다작은수.py","group":"local","local":true}
