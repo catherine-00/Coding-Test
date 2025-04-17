@@ -17,10 +17,39 @@ N과 M은 100보다 작거나 같고,
 
 '''
 import sys
-N,M = map(int,sys.stdin.line().strip().split())
+# 첫째 줄에 주어진 N, M 값 입력받기.
+N,M = map(int,sys.stdin.readline().strip().split())
 
+# A에 행렬 만들기
 A = []
 for i in range(N):
-    x = int(sys.stdin.line().strip())
-    if x:
-        A.append(list(int(x)))
+    a = list(map(int,sys.stdin.readline().strip().split())) #한 줄씩 입력 받기.
+    A.append(a)
+    # A = [[0,0,0],[0,0,0],[0,0,0]]
+
+# B에 행렬 만들기
+B = []
+for i in range(N):
+    b = list(map(int,sys.stdin.readline().strip().split())) #한 줄씩 입력 받기.
+    B.append(b)
+    # B = [[0,0,0],[0,0,0],[0,0,0]]
+    # 반복 횟수가 N으로 정해져 있기 때문에 마지막에 받는 빈 입력값을 처리해줄 필요가 없음.
+
+# print(f"A : \n{A}") 
+# print(f"B : \n{B}")
+
+# A,B 더한 결과값인 C행렬 만들기
+C = []
+for n in range(N):
+    l = [] # 행 한줄
+    for m in range(M):
+        l.append(A[n][m] + B[n][m]) # 한 행의 열끼리 덧셈.
+    C.append(l) # 만든 한 행을 C 행렬에 넣기
+
+for i in C:
+    for j in i:
+        print(j, end=' ')
+    print()
+
+             
+        
