@@ -1,0 +1,1 @@
+{"name":"Local: 문자열","url":"c:\\Users\\Admin\\Desktop\\Coding-Test\\BaekJoon\\Class1\\문자열.py","tests":[{"id":1744946798360,"input":"3\nACDKJFOWIEGHE\nO\nAB","output":"AE\nOO\nAB"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\Desktop\\Coding-Test\\BaekJoon\\Class1\\문자열.py","group":"local","local":true}
