@@ -1,10 +1,11 @@
 # 음계
 # 2920
 
+user_play = list(map(int, input().split()))
 
-# 각 음계를 리스트 안에 저장
-scale = " c d e f g a b C".split()    # scale = ['c', 'd', 'e', 'f', 'g', 'a', 'b', 'C']
-
-
-
-
+if user_play == list(range(1, 9)):
+    print("ascending")
+elif user_play == list(range(8, 0, -1)):
+    print("descending")
+else:
+    print("mixed")
