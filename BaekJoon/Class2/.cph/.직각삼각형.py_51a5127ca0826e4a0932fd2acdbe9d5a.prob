@@ -1,0 +1,1 @@
+{"name":"Local: 직각삼각형","url":"c:\\Users\\Admin\\Desktop\\Coding-Test\\BaekJoon\\Class2\\직각삼각형.py","tests":[{"id":1745828620244,"input":"6 8 10\n25 52 60\n5 12 13\n0 0 0","output":"right\nwrong\nright"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\Desktop\\Coding-Test\\BaekJoon\\Class2\\직각삼각형.py","group":"local","local":true}
