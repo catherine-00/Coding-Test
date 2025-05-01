@@ -35,11 +35,12 @@
 
 # 입력값 받고 변수 할당
 import sys
+import math
 
 l = [line.strip() for line in sys.stdin.readlines()]
 # l = ['23', '3 1 4 1 5 9', '5 7']
 
-N = l[0]
+N = int(l[0])
 # N = 23
 
 size = [int(s) for s in l[1].split()]
@@ -48,8 +49,24 @@ size = [int(s) for s in l[1].split()]
 T,P = map(int,l[2].split())
 # T = 5, P = 7
 
+
+
+
 # 옷 묶음 전체 주문량
-for i in size:
-    i / T # 몫을 올림하면 된다.
+shirts_count = 0
+
+for i in size:    # size = [3, 1, 4, 1, 5, 9] 에서 숫자 하나씩 i로 넘겨주기기
+    # 숫자 / 묶음 1개 당 옷 개수 5개
+    # 계산된 몫을 올림하면 된다.
+    shirts_count += math.ceil(i / T )
+print(shirts_count)
+
+
+# 펜 묶음 주문량, 낱개 주문량
+pen_count = divmod(N,P)
+print(pen_count[0],pen_count[1])
+
+
+
 
 
