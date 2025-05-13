@@ -1,0 +1,93 @@
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*
+  xt256.css
+
+  Contact: initbar [at] protonmail [dot] ch
+         : github.com/initbar
+*/
+.hljs {
+  color: #eaeaea;
+  background: #000
+}
+.hljs-subst {
+  color: #eaeaea
+}
+.hljs-emphasis {
+  font-style: italic
+}
+.hljs-strong {
+  font-weight: bold
+}
+.hljs-type {
+  color: #eaeaea
+}
+
+
+.hljs-literal,
+.hljs-number,
+.hljs-name {
+  color: #33CC99;
+  font-weight: bolder
+}
+.hljs-comment {
+  color: #BBAA99
+}
+.hljs-selector-id,
+.hljs-quote {
+  color: #00ffff
+}
+
+.hljs-built_in,
+.hljs-template-variable,
+.hljs-variable,
+.hljs-title {
+  color: #00ffff;
+  font-weight: bold
+}
+.hljs-selector-class,
+.hljs-attribute {
+  color: #76EE00
+}
+
+
+.hljs-keyword,
+.hljs-symbol {
+  color: #FF00AA
+}
+.hljs-string,
+.hljs-bullet {
+  color: #CBC3FF
+}
+.hljs-tag,
+.hljs-section {
+  color: #FF00AA
+}
+.hljs-selector-tag {
+  color: #000fff;
+  font-weight: bold
+}
+
+
+.hljs-regexp,
+.hljs-params {
+  color: #FD971F
+}
+
+
+
+
+.hljs-link {
+  color: #ff00ff
+}
+.hljs-meta {
+  color: #fff;
+  font-weight: bolder
+}
+
