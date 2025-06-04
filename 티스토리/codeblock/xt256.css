@@ -37,7 +37,7 @@ code.hljs {
 .hljs-number,
 .hljs-name {
   color: #33CC99;
-  font-weight: bolder
+
 }
 .hljs-comment {
   color: #BBAA99
@@ -51,7 +51,6 @@ code.hljs {
 .hljs-template-variable,
 .hljs-variable{
   color: #00ffff;
-  font-weight: bold
 }
 
 .hljs-title,
@@ -78,7 +77,6 @@ code.hljs {
 }
 .hljs-selector-tag {
   color: #000fff;
-  font-weight: bold
 }
 
 
@@ -88,12 +86,9 @@ code.hljs {
 }
 
 
-
-
 .hljs-link {
   color: #ff00ff
 }
 .hljs-meta {
   color: #EEEE22;
-  font-weight: bolder
 }
