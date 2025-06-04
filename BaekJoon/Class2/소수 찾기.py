@@ -13,7 +13,7 @@ import sys
 import math # 루트 사용하기 위해서
 
 l = [line.strip() for line in sys.stdin.readlines()]
-# l=['4', '1 3 5 7']
+l=['4', '1 3 5 7']
 
 # 변수 할당
 N = int(l[0])  # 숫자 개수
@@ -37,3 +37,6 @@ def is_prime(n):
 # count에 1을 더함.
 count = sum(1 for x in nums if is_prime(x))
 print(count)
+'''
+dfsdf
+'''
