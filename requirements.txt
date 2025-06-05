@@ -1,4 +1,5 @@
-python
 numpy
 pandas
 seaborn
+watchdog
+markdown
