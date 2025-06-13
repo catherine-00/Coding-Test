@@ -1,25 +1,31 @@
-# [level 1] 아픈 동물 찾기 - 59036 
-
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59036) 
-
-### 성능 요약
-
-메모리: 0.0 MB, 시간: 0.00 ms
-
-### 구분
-
-코딩테스트 연습 > SELECT
-
-### 채점결과
-
-Empty
-
-### 제출 일자
-
-2025년 05월 28일 12:41:40
-
-### 문제 설명
-
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>README and SQL Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, monospace;
+        }
+    </style>
+    </head>
+    <body>
+    <div class='markdown-body'>
+    
+    <h1>[level 1] 아픈 동물 찾기 - 59036</h1>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/59036">문제 링크</a> </p>
+<h3>문제 설명</h3>
 <p><code>ANIMAL_INS</code> 테이블은 동물 보호소에 들어온 동물의 정보를 담은 테이블입니다. <code>ANIMAL_INS</code> 테이블 구조는 다음과 같으며, <code>ANIMAL_ID</code>, <code>ANIMAL_TYPE</code>, <code>DATETIME</code>, <code>INTAKE_CONDITION</code>, <code>NAME</code>, <code>SEX_UPON_INTAKE</code>는 각각 동물의 아이디, 생물 종, 보호 시작일, 보호 시작 시 상태, 이름, 성별 및 중성화 여부를 나타냅니다.</p>
 <table class="table">
         <thead><tr>
@@ -141,5 +147,23 @@ Empty
 </ol>
 </div>
 
-
-> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+<blockquote>
+<p>출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges</p>
+</blockquote>
+    <hr>
+    <br>
+    <br>
+    <h2>SQL Code</h2>
+<pre id="code_1749804226637" class="sql" data-ke-language="sql" data-ke-type="codeblock"><code>-- 코드를 입력하세요
+SELECT
+    ANIMAL_ID
+    , NAME
+FROM ANIMAL_INS
+WHERE INTAKE_CONDITION LIKE 'Sick'
+ORDER BY ANIMAL_ID
+;
+</code></pre>
+    </div>
+    </body>
+    </html>
+    
