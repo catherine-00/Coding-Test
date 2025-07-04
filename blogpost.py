@@ -3,6 +3,7 @@ import sys
 import os
 import markdown
 import time
+import thumbnail
 # 현재 시간을 밀리초 단위로 가져오기 (JavaScript의 Date.now()처럼)
 code_id = f"code_{int(time.time() * 1000)}"
 
@@ -23,6 +24,9 @@ def convert_files_to_html(readme_path, sql_path, output_path=f"output.html"):
         # 선택된 줄들을 하나의 문자열로 합치고 마크다운 파싱
         readme_content = ''.join(selected_lines)
         readme_html = markdown.markdown(readme_content)
+        # HTML 저장 디렉토리 경로 추출
+        output_dir = os.path.dirname(output_path)
+        thumbnail.title(selected_lines[0], output_dir)
 
 
     # SQL 파일 읽기 및 HTML 코드블럭 처리
