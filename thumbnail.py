@@ -1,8 +1,36 @@
+# thumbnail.py
+from PIL import Image, ImageDraw, ImageFont
+import os
+import re
+
+def wrap_text(text, width=15):
+    lines = []
+    while len(text) > width:
+        space_pos = text.rfind(' ', 0, width)
+        if space_pos == -1:
+            space_pos = width
+        lines.append(text[:space_pos])
+        text = text[space_pos:].lstrip()
+    lines.append(text)
+    return '\n'.join(lines)
+
+
+
+
+
+
 def title(t, output_dir="."):  # 기본 저장 경로는 현재 폴더
     site = "프로그래머스"
-    title_text = t[2:]
+    # 기존 제목 줄에서 텍스트만 추출하고 파일명으로 사용할 수 있게 정리
+    raw_title = t[2:]
+    title_text = raw_title.strip()  # 양끝 공백 제거
+    title_text = re.sub(r'[\\/*?:"<>|\n\r\t]', '', title_text)  # Windows에서 금지된 문자 제거
+    title_text = re.sub(r'\s+', ' ', title_text)  # 여러 공백을 하나로
+
     language = "MySQL"
-    text = (f"{{{site}}}\n{title_text}\n[언어 : {language}]")
+    wrapped_title = wrap_text(title_text, width=15)
+    text = f"{{{site}}}\n{wrapped_title}\n[언어 : {language}]"
+
 
     # 이미지 설정
     img_size = (800, 800)
