@@ -29,6 +29,7 @@ def convert_files_to_html(readme_path, sql_path, output_path=f"output.html"):
     with open(sql_path, 'r', encoding='utf-8') as f:
         sql_content = f.read()
         sql_html = f"<h2>SQL Code</h2>\n<pre id=\"{code_id}\" class=\"sql\" data-ke-language=\"sql\" data-ke-type=\"codeblock\"><code>{sql_content}</code></pre>"
+        sql_html_comment = f"<h2>SQL Code 해설</h2>\n<pre id=\"{code_id}\" class=\"sql\" data-ke-language=\"sql\" data-ke-type=\"codeblock\"><code>{sql_content}</code></pre>"
 
     # 전체 HTML 구성
     full_html = f"""<!DOCTYPE html>
@@ -62,6 +63,9 @@ def convert_files_to_html(readme_path, sql_path, output_path=f"output.html"):
     <br>
     {sql_html}
     </div>
+    <br>
+    <br>
+    {sql_html_comment}
     </body>
     </html>
     """
